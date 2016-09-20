@@ -6,6 +6,7 @@ import java.sql.SQLException;
 
 public class ConnectionFactory {
 	private static ConnectionFactory instance = new ConnectionFactory();
+	public static Connection connection = null;
 
 	public static final String URL = "jdbc:mysql://localhost/libraryinformationsystem";
 	public static final String USER = "root";
@@ -24,11 +25,12 @@ public class ConnectionFactory {
 	// To create connection
 	private Connection createConnection() {
 
-		Connection connection = null;
-		try {
-			connection = DriverManager.getConnection(URL, USER, PASSWORD);
-		} catch (SQLException e) {
-			e.printStackTrace();
+		if(connection==null) {
+			try {
+				connection = DriverManager.getConnection(URL, USER, PASSWORD);
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
 		return connection;
 	}

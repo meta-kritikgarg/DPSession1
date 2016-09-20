@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.model;
+package com.model.vo;
 
 /**
  * @author Kritik Garg
