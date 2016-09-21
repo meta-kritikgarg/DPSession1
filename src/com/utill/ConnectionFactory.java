@@ -8,7 +8,7 @@ public class ConnectionFactory {
 	private static ConnectionFactory instance = new ConnectionFactory();
 	public static Connection connection = null;
 
-	public static final String URL = "jdbc:mysql://localhost/libraryinformationsystem";
+	public static final String URL = "jdbc:mysql://localhost/cardekho";
 	public static final String USER = "root";
 	public static final String PASSWORD = "12345";
 

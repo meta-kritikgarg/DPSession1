@@ -8,9 +8,9 @@ package com.model.vo;
  *
  */
 public class CarVO {
-	int id;
-	String createdBy;
-	String updatedBy, make,model;
+	int id=0;
+	String updateTime;
+	String updatedBy, make,model ;
 	int engineInCC, fuelCapacity, milage, price, roadTax, ac, powerSteering, accessoryKit ;
 	public int getId() {
 		return id;
@@ -18,14 +18,14 @@ public class CarVO {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getCreatedBy() {
-		return createdBy;
-	}
-	public void setCreatedBy(String createdBy) {
-		this.createdBy = createdBy;
-	}
 	public String getUpdatedBy() {
 		return updatedBy;
+	}
+	public String getUpdateTime() {
+		return updateTime;
+	}
+	public void setUpdateTime(String updateTime) {
+		this.updateTime = updateTime;
 	}
 	public void setUpdatedBy(String updatedBy) {
 		this.updatedBy = updatedBy;
